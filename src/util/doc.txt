@@ -1,0 +1,823 @@
+
+function createData(name, mobile, email, doj, aadharID, action) {
+  return {
+    name,
+    mobile,
+    email,
+    doj,
+    aadharID,
+    action
+  };
+}
+const headCells = [
+  {
+    id: "name",
+    label: "Name",
+    minWidth: 170
+  },
+  {
+    id: "mobile",
+    label: "Mobile",
+    minWidth: 170
+  },
+  {
+    id: "email",
+    label: "Email",
+    minWidth: 170
+  },
+  {
+    id: "doj",
+    label: "DOJ",
+    minWidth: 170
+  },
+  {
+    id: "aadharID",
+    label: "Aadhar ID",
+    minWidth: 170
+  },
+  {
+    id: "action",
+    label: "Action",
+    minWidth: 170
+  }
+];
+
+const rows = [
+  createData(
+    "zaid",
+    "2855667788",
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    2855667788,
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    2855667788,
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    2855667788,
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    2855667788,
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    2855667788,
+    "khan@gmail.com",
+    "24 / 02 / 2020",
+    123456789123,
+    "View Details"
+  )
+];
+
+    <TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        padding="none"
+                      >
+                        {row.name}
+                      </TableCell>
+                      <TableCell align="right">{row.mobile}</TableCell>
+                      <TableCell align="right">{row.email}</TableCell>
+                      <TableCell align="right">{row.doj}</TableCell>
+                      <TableCell align="right">{row.aadharID}</TableCell>
+                      <TableCell align="right">{row.action}</TableCell>
+
+/////user ends/////
+
+
+////parking
+
+function createData(
+  listingID,
+  parkingType,
+  size,
+  displayName,
+  hourlyRate,
+  autoParking,
+  parkingEnabledStatus,
+  createdOn,
+  action
+) {
+  return {
+    listingID,
+    parkingType,
+    size,
+    displayName,
+    hourlyRate,
+    autoParking,
+    parkingEnabledStatus,
+    createdOn,
+    action
+  };
+}
+const headCells = [
+  {
+    id: "listingID",
+
+    label: "Listing ID"
+  },
+  {
+    id: "parkingType",
+
+    label: "Parking Type"
+  },
+  {
+    id: "size",
+
+    label: "Size"
+  },
+  {
+    id: "displayName",
+
+    label: "Display Name"
+  },
+  {
+    id: "hourlyRate",
+
+    label: "Hourly Rate"
+  },
+  {
+    id: "autoParking",
+
+    label: "Auto Parking"
+  },
+  {
+    id: "parkingEnabledStatus",
+
+    label: "Parking Enabled Status"
+  },
+  {
+    id: "createdOn",
+
+    label: "Created On"
+  },
+  {
+    id: "action",
+
+    label: "Action"
+  }
+];
+
+const rows = [
+  createData(
+    "Jahad",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  ),
+  createData(
+    "Zahad",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  ),
+  createData(
+    "Pahad",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  ),
+  createData(
+    "Kahad",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  ),
+  createData(
+    "Fahad",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  ),
+  createData(
+    "Arman",
+    "Commercial",
+    "SUV",
+    "Heara Panan Parking",
+    100,
+    "-",
+    "-",
+    "27 Jan 2020",
+    "View Details"
+  )
+];
+
+////parking ends
+
+
+/////support start
+
+function createData(supportID, subject, message, userName, userMobile, action) {
+  return {
+    supportID,
+    subject,
+    message,
+    userName,
+    userMobile,
+    action
+  };
+}
+const headCells = [
+  { id: "supportID", label: "Support ID", minWidth: 170 },
+  { id: "subject", label: "Subject", minWidth: 100 },
+  { id: "message", label: "Message", minWidth: 170 },
+  { id: "userName", label: "User Name", minWidth: 170 },
+  { id: "userMobile", label: "User Mobile", minWidth: 100 },
+  { id: "action", label: "Action", minWidth: 100 }
+];
+
+const rows = [
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    " View Details"
+  )
+];
+
+ <TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        padding="none"
+                        style={{ padding: "20px !important" }}
+                      >
+                        {row.supportID}
+                      </TableCell>
+                      <TableCell align="right">{row.subject}</TableCell>
+                      <TableCell align="right">{row.message}</TableCell>
+                      <TableCell align="right">{row.userName}</TableCell>
+                      <TableCell align="right">{row.userMobile}</TableCell>
+                      <TableCell align="right">{row.action}</TableCell>
+
+
+///suport ends
+
+
+/////payemt start
+function createData(
+  name,
+  mobile,
+  email,
+  doj,
+  booking,
+  tax,
+  commision,
+  payout,
+  roundoff,
+  action,
+  code,
+  population,
+  size
+) {
+  return {
+    name,
+    mobile,
+    email,
+    doj,
+    booking,
+    tax,
+    commision,
+    payout,
+    roundoff,
+    action,
+    code,
+    population,
+    size
+  };
+}
+const headCells = [
+  { id: "name", label: "Name", minWidth: 170 },
+  { id: "mobile", label: "Mobile", minWidth: 100 },
+  { id: "email", label: "Email", minWidth: 170 },
+  { id: "doj", label: "DOJ", minWidth: 170 },
+  { id: "booking", label: "Booking Amount", minWidth: 100 },
+  { id: "tax", label: "Tax Amount", minWidth: 100 },
+  { id: "commision", label: "otopark Commision", minWidth: 100 },
+  { id: "payout", label: "payout Pending", minWidth: 100 },
+  { id: "roundoff", label: "roundoff Amount", minWidth: 100 },
+  { id: "action", label: "Action", minWidth: 100 }
+];
+
+const rows = [
+  createData(
+    "zaid 1",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  ),
+  createData(
+    "zaid",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    "View Details"
+  )
+];
+
+<TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        padding="none"
+                        // style={{ padding: "20px !important" }}
+                      >
+                        {row.name}
+                      </TableCell>
+                      <TableCell align="right">{row.mobile}</TableCell>
+                      <TableCell align="right">{row.email}</TableCell>
+                      <TableCell align="right">{row.doj}</TableCell>
+                      <TableCell align="right">{row.booking}</TableCell>
+                      <TableCell align="right">{row.tax}</TableCell>
+                      <TableCell align="right">{row.commision}</TableCell>
+                      <TableCell align="right">{row.payout}</TableCell>
+                      <TableCell align="right">{row.roundoff}</TableCell>
+                      <TableCell align="right">{row.action}</TableCell>
+
+
+///payment ends
+
+
+////notification start
+
+
+const columns = [
+  { id: "title", label: "Title", minWidth: 170 },
+  { id: "discription", label: "Discription", minWidth: 270 },
+  { id: "image", label: "Image", minWidth: 100 },
+  { id: "receiver", label: "Receiver", minWidth: 100 },
+  { id: "action", label: "Action", minWidth: 100 }
+];
+
+function createData(title, discription, image, receiver, action) {
+  return {
+    title,
+    discription,
+    image,
+    receiver,
+    action
+  };
+}
+
+const rows = [
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020"),
+  createData("Earn Money!!", "I have not received", "-", "all", "29 Oct 2020")
+];
+
+
+//// parking Appbar/////
+
+
+import React from "react";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import InputBase from "@material-ui/core/InputBase";
+import MenuItem from "@material-ui/core/MenuItem";
+import SearchIcon from "@material-ui/icons/Search";
+import Button from "@material-ui/core/Button";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import { useStyles } from "./css";
+
+export default function PrimarySearchAppBar() {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    age: "",
+    name: "hai"
+  });
+
+  const handleChange = event => {
+    const name = event.target.name;
+    setState({
+      ...state,
+      [name]: event.target.value
+    });
+  };
+
+  return (
+    <div className={classes.grow}>
+      <AppBar
+        position="static"
+        style={{
+          backgroundColor: "white"
+          //  boxShadow: "5px 5px 5px 5px white"
+        }}
+      >
+        <Toolbar>
+          <div
+            style={{
+              backgroundColor: "#00BBDC",
+              borderRadius: "50px",
+              padding: "5px"
+            }}
+          >
+            <img
+              width="25px"
+              height="25px"
+              style={{ marginBottom: "-10px" }}
+              src={require("../../../assets/icons/whiteBookingIcon.svg")}
+            />
+            <select className={classes.dropdown}>
+              <option selected>january 1,2020 - oct 5,2023</option>
+              <option>january 2,2020 - oct 5,2023</option>
+              <option>january 3,2020 - oct 5,2023</option>
+              <option>january 4,2020 - oct 5,2023</option>
+              <option>january 5,2020 - oct 5,2023</option>
+              <option>january 6,2020 - oct 5,2023</option>
+            </select>
+          </div>
+          <div className={classes.grow} />
+          {/* buttons start */}
+          <div>
+            <Button className={classes.button} variant="outlined">
+              Verified
+            </Button>
+            <Button
+              className={classes.button}
+              variant="outlined"
+              style={{ fontSize: "10px" }}
+            >
+              Verification
+              <br />
+              Pending
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Rejected
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Draft
+            </Button>
+            <Button
+              className={classes.button}
+              variant="outlined"
+              style={{ fontSize: "10px" }}
+            >
+              Edit Requested <br /> Parking
+            </Button>
+          </div>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon style={{ color: "grey" }} />
+            </div>
+            <InputBase
+              placeholder="Search…"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput
+              }}
+              inputProps={{ "aria-label": "search" }}
+            />
+          </div>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
+
+
+///// USER APPBAR FOR SCROLL /////
+
+import React from "react";
+import { fade, makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import InputBase from "@material-ui/core/InputBase";
+import Badge from "@material-ui/core/Badge";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+import MenuIcon from "@material-ui/icons/Menu";
+import SearchIcon from "@material-ui/icons/Search";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import MailIcon from "@material-ui/icons/Mail";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import MoreIcon from "@material-ui/icons/MoreVert";
+import Button from "@material-ui/core/Button";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import { useStyles } from "./css";
+
+export default function PrimarySearchAppBar() {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    age: "",
+    name: "hai"
+  });
+
+  const handleChange = event => {
+    const name = event.target.name;
+    setState({
+      ...state,
+      [name]: event.target.value
+    });
+  };
+
+  return (
+    <div className={classes.grow}>
+      <AppBar
+        position="static"
+        style={{ display: "flex", backgroundColor: "white" }}
+      >
+        <Toolbar>
+          <div
+            style={{
+              backgroundColor: "#00BBDC",
+              borderRadius: "50px",
+              padding: "5px"
+            }}
+          >
+            <img
+              width="25px"
+              height="25px"
+              style={{ marginBottom: "-10px" }}
+              src={require("../../../assets/icons/whiteBookingIcon.svg")}
+            />
+            <select className={classes.dropdown}>
+              <option selected>january 1,2020 - oct 5,2023</option>
+              <option>january 2,2020 - oct 5,2023</option>
+              <option>january 3,2020 - oct 5,2023</option>
+              <option>january 4,2020 - oct 5,2023</option>
+              <option>january 5,2020 - oct 5,2023</option>
+              <option>january 6,2020 - oct 5,2023</option>
+            </select>
+          </div>
+          <div className={classes.grow} />
+          {/* button */}
+          <div>
+            <Button className={classes.button} variant="outlined">
+              All Users
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Active Users
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Inactive Users
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Host Users
+            </Button>
+            <Button className={classes.button} variant="outlined">
+              Guest Users
+            </Button>
+          </div>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon style={{ color: "grey" }} />
+            </div>
+            <InputBase
+              placeholder="Search…"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput
+              }}
+              inputProps={{ "aria-label": "search" }}
+            />
+          </div>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
+
+    
