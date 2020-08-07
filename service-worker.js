@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/otopark_admin/precache-manifest.19e5c4823b214823e0f412ac8b449626.js"
+  "/otopark_admin/precache-manifest.78aef0aeb91c0dc214e0ad834eb138ea.js"
 );
 
 self.addEventListener('message', (event) => {

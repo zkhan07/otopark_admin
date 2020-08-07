@@ -10,8 +10,8 @@
     "static/js/3.8a153b47.chunk.js.map": "/otopark_admin/static/js/3.8a153b47.chunk.js.map",
     "main.js": "/otopark_admin/static/js/main.70ce9f6a.chunk.js",
     "main.js.map": "/otopark_admin/static/js/main.70ce9f6a.chunk.js.map",
-    "runtime-main.js": "/otopark_admin/static/js/runtime-main.f19ee69f.js",
-    "runtime-main.js.map": "/otopark_admin/static/js/runtime-main.f19ee69f.js.map",
+    "runtime-main.js": "/otopark_admin/static/js/runtime-main.6b82b38b.js",
+    "runtime-main.js.map": "/otopark_admin/static/js/runtime-main.6b82b38b.js.map",
     "static/js/6.32bb4a3c.chunk.js": "/otopark_admin/static/js/6.32bb4a3c.chunk.js",
     "static/js/6.32bb4a3c.chunk.js.map": "/otopark_admin/static/js/6.32bb4a3c.chunk.js.map",
     "static/js/7.9c47322a.chunk.js": "/otopark_admin/static/js/7.9c47322a.chunk.js",
@@ -24,8 +24,8 @@
     "static/js/10.519dff7b.chunk.js.map": "/otopark_admin/static/js/10.519dff7b.chunk.js.map",
     "static/js/11.1b8bfe16.chunk.js": "/otopark_admin/static/js/11.1b8bfe16.chunk.js",
     "static/js/11.1b8bfe16.chunk.js.map": "/otopark_admin/static/js/11.1b8bfe16.chunk.js.map",
-    "static/js/12.b1308d75.chunk.js": "/otopark_admin/static/js/12.b1308d75.chunk.js",
-    "static/js/12.b1308d75.chunk.js.map": "/otopark_admin/static/js/12.b1308d75.chunk.js.map",
+    "static/js/12.c6d0ca69.chunk.js": "/otopark_admin/static/js/12.c6d0ca69.chunk.js",
+    "static/js/12.c6d0ca69.chunk.js.map": "/otopark_admin/static/js/12.c6d0ca69.chunk.js.map",
     "static/js/13.84ae058c.chunk.js": "/otopark_admin/static/js/13.84ae058c.chunk.js",
     "static/js/13.84ae058c.chunk.js.map": "/otopark_admin/static/js/13.84ae058c.chunk.js.map",
     "static/js/14.14e26f61.chunk.js": "/otopark_admin/static/js/14.14e26f61.chunk.js",
@@ -41,7 +41,7 @@
     "static/js/19.2f963cac.chunk.js": "/otopark_admin/static/js/19.2f963cac.chunk.js",
     "static/js/19.2f963cac.chunk.js.map": "/otopark_admin/static/js/19.2f963cac.chunk.js.map",
     "index.html": "/otopark_admin/index.html",
-    "precache-manifest.19e5c4823b214823e0f412ac8b449626.js": "/otopark_admin/precache-manifest.19e5c4823b214823e0f412ac8b449626.js",
+    "precache-manifest.78aef0aeb91c0dc214e0ad834eb138ea.js": "/otopark_admin/precache-manifest.78aef0aeb91c0dc214e0ad834eb138ea.js",
     "service-worker.js": "/otopark_admin/service-worker.js",
     "static/js/1.d814f2a9.chunk.js.LICENSE.txt": "/otopark_admin/static/js/1.d814f2a9.chunk.js.LICENSE.txt",
     "static/js/10.519dff7b.chunk.js.LICENSE.txt": "/otopark_admin/static/js/10.519dff7b.chunk.js.LICENSE.txt",
@@ -95,7 +95,7 @@
     "static/media/whiteMenu-barCloseIcon.svg": "/otopark_admin/static/media/whiteMenu-barCloseIcon.0bbcae1b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f19ee69f.js",
+    "static/js/runtime-main.6b82b38b.js",
     "static/js/11.1b8bfe16.chunk.js",
     "static/js/main.70ce9f6a.chunk.js"
   ]
