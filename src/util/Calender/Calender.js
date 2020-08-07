@@ -7,7 +7,11 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker
 } from "@material-ui/pickers";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { useStyles } from "./css";
+import Favorite from "@material-ui/icons/Favorite";
 
 export default function MaterialUIPickers() {
   const classes = useStyles();
@@ -24,9 +28,10 @@ export default function MaterialUIPickers() {
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <Grid container justify="space-between">
         <KeyboardDatePicker
-          palette="background"
-          palette="primary"
-          className={classes.calender}
+          keyboardIcon={
+            <img src={require("../../assets/icons/whiteBookingIcon.svg")} />
+          }
+          InputProps={{ className: classes.calender }}
           disableToolbar
           variant="inline"
           format="dd/MM/yyyy"

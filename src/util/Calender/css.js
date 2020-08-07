@@ -16,19 +16,7 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     padding: "10px"
   },
-  palette: {
-    background: {
-      main: "red"
-    },
-    primary: {
-      main: "#0a226b"
-    },
-    secondary: {
-      main: "#76c9d2",
-      contrastText: "#FFFFFF"
-    },
-    error: {
-      main: "#9D399E"
-    }
+  input: {
+    color: "red"
   }
 }));
