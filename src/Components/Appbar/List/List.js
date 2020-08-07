@@ -36,7 +36,7 @@ export const list = [
   {
     icon: <img src={require("../../../assets/icons/homeIcon.svg")} />,
     primary: "Dashboard",
-    to: "/otopark/dashboard"
+    to: "/"
   },
   {
     icon: <img src={require("../../../assets/icons/userIcon.svg")} />,
