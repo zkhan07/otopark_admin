@@ -18,5 +18,9 @@ export const useStyles = makeStyles(theme => ({
   },
   input: {
     color: "red"
+  },
+  imageIcon: {
+    width: "25px",
+    height: "25px"
   }
 }));

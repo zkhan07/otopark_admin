@@ -20,8 +20,9 @@ const Notification = lazy(() =>
   import("../Components/Notification/Notification")
 );
 
-const HardwareGetIn = lazy(() =>
-  import("../Components/Hardware/HardwareGetIn/HardwareGetIn")
+const RFID = lazy(() => import("../Components/RFID/RFID"));
+const TicketDispenser = lazy(() =>
+  import("../Components/TicketDispenser/TicketDispenser")
 );
 
 export const Routes = () => {
@@ -31,7 +32,7 @@ export const Routes = () => {
         <Switch>
           <Route exact path="/otopark/login" component={LoginPage} />
 
-          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/otopark/dashboard" component={Dashboard} />
           <Route exact path="/otopark/users" component={UserDash} />
           <Route exact path="/otopark/parking" component={Parking} />
           <Route exact path="/otopark/booking" component={Booking} />
@@ -40,9 +41,12 @@ export const Routes = () => {
           <Route exact path="/otopark/support" component={Support} />
           <Route exact path="/otopark/notification" component={Notification} />
 
-          <Route exact path="/otopark/getin" component={HardwareGetIn} />
-
-          {/* <Route exact path="/users" component={Content} /> */}
+          <Route exact path="/otopark/rfid" component={RFID} />
+          <Route
+            exact
+            path="/otopark/ticketdispenser"
+            component={TicketDispenser}
+          />
 
           {/* <Route exact path="*" component={NotFound} /> */}
         </Switch>

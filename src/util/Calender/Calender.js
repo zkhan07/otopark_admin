@@ -28,9 +28,6 @@ export default function MaterialUIPickers() {
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <Grid container justify="space-between">
         <KeyboardDatePicker
-          keyboardIcon={
-            <img src={require("../../assets/icons/whiteBookingIcon.svg")} />
-          }
           InputProps={{ className: classes.calender }}
           disableToolbar
           variant="inline"
@@ -43,6 +40,12 @@ export default function MaterialUIPickers() {
           KeyboardButtonProps={{
             "aria-label": "change date"
           }}
+          keyboardIcon={
+            <img
+              className={classes.imageIcon}
+              src={require("../../assets/icons/whiteBookingIcon.svg")}
+            />
+          }
         />
       </Grid>
     </MuiPickersUtilsProvider>

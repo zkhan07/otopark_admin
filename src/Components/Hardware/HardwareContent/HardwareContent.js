@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import HardwareAppbar from "../HardwareAppbar/HardwareAppbar";
 import HardwareRFIDTable from "../HardwareRFIDTable/HardwareRFIDTable";
-import TicketDispenser from "../TicketDispenser/TicketDispenser";
+import TicketDispenser from "../TicketDispenserTable/TicketDispenserTable";
 import HardwareTable from "../HardwareTable/HardwareTable";
 import { Link } from "react-router-dom";
 
@@ -49,24 +49,39 @@ export default function FullWidthGrid() {
             </Button>
             <br />
             <br />
-            <Button className={classes.button} variant="outlined">
-              <img
-                className={classes.image}
-                src={require("../../../assets/icons/hardwareRFIDIcon.svg")}
-                style={{ width: "25px", height: "25px", marginLeft: "-185px" }}
-              />
-              <b style={{ marginLeft: "20px" }}>RFID</b>
-            </Button>
+            <Link to="/otopark/rfid" style={{ textDecoration: "none" }}>
+              <Button className={classes.button} variant="outlined">
+                <img
+                  className={classes.image}
+                  src={require("../../../assets/icons/hardwareRFIDIcon.svg")}
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "-185px"
+                  }}
+                />
+                <b style={{ marginLeft: "20px" }}>RFID</b>
+              </Button>
+            </Link>
             <br />
             <br />
-            <Button className={classes.button} variant="outlined">
-              <img
-                className={classes.image}
-                src={require("../../../assets/icons/hardwareTicketDispenserIcon.svg")}
-                style={{ width: "25px", height: "25px", marginLeft: "-115px" }}
-              />
-              <b style={{ marginLeft: "20px" }}>Ticket Dispenser</b>
-            </Button>
+            <Link
+              to="/otopark/ticketdispenser"
+              style={{ textDecoration: "none" }}
+            >
+              <Button className={classes.button} variant="outlined">
+                <img
+                  className={classes.image}
+                  src={require("../../../assets/icons/hardwareTicketDispenserIcon.svg")}
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    marginLeft: "-115px"
+                  }}
+                />
+                <b style={{ marginLeft: "20px" }}>Ticket Dispenser</b>
+              </Button>
+            </Link>
             <br />
             <br />
             <Button className={classes.button} variant="outlined">
@@ -85,12 +100,12 @@ export default function FullWidthGrid() {
             />
             <br />
             <br />
-            <a href="#">
+            <a href="#" style={{ textDecoration: "none" }}>
               <Button className={classes.button} variant="outlined">
                 <b>Get In</b>
               </Button>
             </a>
-            <a href="#">
+            <a href="#" style={{ textDecoration: "none" }}>
               <Button className={classes.button} variant="outlined">
                 <b>Get Out</b>
               </Button>
@@ -104,42 +119,6 @@ export default function FullWidthGrid() {
 
             <Paper className={classes.paper}>
               <HardwareTable />
-            </Paper>
-          </Grid>
-
-          <Grid item xs={12}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <Typography
-              variant="h5"
-              style={{ padding: "10px", color: "#1D1D1D" }}
-            >
-              <b>FASTag Overview</b>
-              <br />
-            </Typography>
-            <Paper className={classes.paper}>
-              <HardwareAppbar />
-              <HardwareRFIDTable />
-            </Paper>
-          </Grid>
-
-          <Grid item xs={12}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <Typography
-              variant="h5"
-              style={{ padding: "10px", color: "#1D1D1D" }}
-            >
-              <b>Ticket Dispenser Overview</b>
-              <br />
-            </Typography>
-            <Paper className={classes.paper}>
-              <HardwareAppbar />
-              <TicketDispenser />
             </Paper>
           </Grid>
         </Grid>
