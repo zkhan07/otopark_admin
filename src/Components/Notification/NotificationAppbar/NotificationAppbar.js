@@ -18,6 +18,7 @@ import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
+import Calender from "../../../util/Calender/Calender";
 import { useStyles } from "./css";
 
 export default function PrimarySearchAppBar() {
@@ -42,31 +43,14 @@ export default function PrimarySearchAppBar() {
         style={{ display: "flex", backgroundColor: "white" }}
       >
         <Toolbar className={classes.scroll}>
-          <div
-            style={{
-              backgroundColor: "#00BBDC",
-              borderRadius: "50px",
-              padding: "5px"
-            }}
-          >
-            <img
-              width="25px"
-              height="25px"
-              style={{ marginBottom: "-10px" }}
-              src={require("../../../assets/icons/whiteBookingIcon.svg")}
-            />
-            <select className={classes.dropdown}>
-              <option selected>january 1,2020 - oct 5,2023</option>
-              <option>january 2,2020 - oct 5,2023</option>
-              <option>january 3,2020 - oct 5,2023</option>
-              <option>january 4,2020 - oct 5,2023</option>
-              <option>january 5,2020 - oct 5,2023</option>
-              <option>january 6,2020 - oct 5,2023</option>
-            </select>
-          </div>
+          <Calender />
 
           <div align="right">
-            <Button className={classes.button} variant="outlined">
+            <Button
+              className={classes.button}
+              variant="contained"
+              style={{ backgroundColor: "#00BBDC", color: "white" }}
+            >
               Create Notification
             </Button>
           </div>

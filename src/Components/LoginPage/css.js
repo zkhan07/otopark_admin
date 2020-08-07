@@ -5,7 +5,7 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     minWidth: "276px",
-    height: "483px",
+    height: "600px",
     backgroundColor: "#F7FAFC",
     boxShadow: "#2C28281C"
   },
@@ -31,6 +31,7 @@ export const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(1)
   },
   submit: {
+    textTransform: "none",
     margin: theme.spacing(3, 0, 2),
     backgroundColor: "#00BBDC",
     borderRadius: 50,
@@ -42,15 +43,23 @@ export const useStyles = makeStyles(theme => ({
       border: "2px solid #00BBDC"
     }
   },
-  forgotcheck:{
-      display:"flex",
-      justifyContent:"space-between"
+  forgotcheck: {
+    display: "flex",
+    justifyContent: "space-between"
   },
-  textbox:{
-    color:'#1717172E',
-    backgroundColor:'black',
-    "&:hover":{
-        color:'#1717172E'
+  textbox: {
+    color: "#1717172E",
+    backgroundColor: "black",
+    "&:hover": {
+      color: "#1717172E"
     }
+  },
+  loginImage: {
+    width: "194px",
+    height: "136px",
+    display: "block",
+    marginTop: "20px",
+    marginLeft: "auto",
+    marginRight: "auto"
   }
 }));

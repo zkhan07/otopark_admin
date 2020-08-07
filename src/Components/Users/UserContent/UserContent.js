@@ -41,7 +41,7 @@ export default function FullWidthGrid() {
           style={{ padding: "10px", color: "#1D1D1D" }}
         >
           <br />
-          <b>User Overview</b>
+          <b>Users Overview</b>
           <br />
           <br />
         </Typography>
@@ -59,8 +59,8 @@ export default function FullWidthGrid() {
                     title={
                       <React.Fragment>
                         <Typography variant="h7" color="inherit">
-                          Total number of users that have or intend to share
-                          their parking space
+                          Total number of registered users includings all Hosts
+                          and Guests
                         </Typography>
                       </React.Fragment>
                     }
@@ -93,8 +93,9 @@ export default function FullWidthGrid() {
                     title={
                       <React.Fragment>
                         <Typography variant="h7" color="inherit">
-                          Total number of users that have or intend to share
-                          their parking space
+                          Total number of active registered users who have
+                          logged into their account or used otopark in the last
+                          30 days
                         </Typography>
                       </React.Fragment>
                     }
@@ -155,8 +156,8 @@ export default function FullWidthGrid() {
                     title={
                       <React.Fragment>
                         <Typography variant="h7" color="inherit">
-                          Total number of users that have or intend to share
-                          their parking space
+                          Total number of users who have booked or intend to
+                          book parking space(s)
                         </Typography>
                       </React.Fragment>
                     }

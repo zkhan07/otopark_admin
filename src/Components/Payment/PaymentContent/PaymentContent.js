@@ -30,7 +30,7 @@ export default function FullWidthGrid() {
           style={{ padding: "10px", color: "#1D1D1D" }}
         >
           <br />
-          <b>Payment Data</b>
+          <b>Payment Overview</b>
         </Typography>
         <br />
         <br />

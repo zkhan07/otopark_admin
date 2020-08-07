@@ -40,22 +40,22 @@ export default function LineChart(props) {
 
   const line = {
     labels: [
-      "January",
-      "February",
-      "March",
-      "April",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
       "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
     ],
     datasets: [
       {
-        label: "Total",
+        label: "Total Hosts",
         borderWidth: 4,
         fill: false,
         lineTension: 0.1,
@@ -81,8 +81,8 @@ export default function LineChart(props) {
 
   const options = {
     tooltips: {
-      enabled: true,
-      custom: CustomTooltips
+      enabled: true
+      // custom: CustomTooltips
     },
     maintainAspectRatio: true,
     legend: {

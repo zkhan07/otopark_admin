@@ -21,8 +21,8 @@ export default function DoughnutChart() {
   const options = {
     cutoutPercentage: 80,
     tooltips: {
-      enabled: true,
-      custom: CustomTooltips
+      enabled: true
+      // custom: CustomTooltips
     },
     maintainAspectRatio: true,
     responsive: true,

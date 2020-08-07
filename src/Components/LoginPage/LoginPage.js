@@ -9,13 +9,16 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import LockIcon from "@material-ui/icons/Lock";
 import { useStyles } from "./css";
 import { useForm, Controller } from "react-hook-form";
 import { Router } from "react-router-dom";
@@ -56,8 +59,12 @@ export default function SignIn() {
           <Card className={classes.root}>
             <CardContent>
               <CssBaseline />
+              <img
+                className={classes.loginImage}
+                src={require("../../assets/images/LoginPageImg.png")}
+              />
 
-              <div className={classes.paper}>
+              <div className={classes.paper} style={{ marginTop: "20px" }}>
                 <Typography component="h5" variant="h5">
                   <b>Otopark Super Admin</b>
                 </Typography>
@@ -81,10 +88,18 @@ export default function SignIn() {
                     required
                     fullWidth
                     id="email"
-                    label="Username or email"
+                    // label="Username or email"
                     name="email"
                     autoComplete="email"
+                    placeholder="Username or email"
                     autoFocus
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <MailOutlineIcon />
+                        </InputAdornment>
+                      )
+                    }}
                   />
                   <TextField
                     style={{ backgroundColor: "#fff" }}
@@ -96,10 +111,18 @@ export default function SignIn() {
                     required
                     fullWidth
                     name="password"
-                    label="Password"
+                    // label="Password"
                     type="password"
                     id="password"
                     autoComplete="current-password"
+                    placeholder="Password"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <LockOutlinedIcon />
+                        </InputAdornment>
+                      )
+                    }}
                   />
                   {/* new */}
                   <div className={classes.forgotcheck}>
@@ -111,6 +134,7 @@ export default function SignIn() {
                             value="remember"
                             name="checkbox"
                             color="grey"
+                            // style={{ fontSize: "1px" }}
                           />
                         }
                         label="Remember me"

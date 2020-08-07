@@ -20,6 +20,10 @@ const Notification = lazy(() =>
   import("../Components/Notification/Notification")
 );
 
+const HardwareGetIn = lazy(() =>
+  import("../Components/Hardware/HardwareGetIn/HardwareGetIn")
+);
+
 export const Routes = () => {
   return (
     <HashRouter>
@@ -35,6 +39,8 @@ export const Routes = () => {
           <Route exact path="/otopark/hardware" component={Hardware} />
           <Route exact path="/otopark/support" component={Support} />
           <Route exact path="/otopark/notification" component={Notification} />
+
+          <Route exact path="/otopark/getin" component={HardwareGetIn} />
 
           {/* <Route exact path="/users" component={Content} /> */}
 

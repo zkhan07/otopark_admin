@@ -21,6 +21,7 @@ export const useStyles = makeStyles(theme => ({
     borderRadius: "50px",
     // border: "0px",
     outline: "0px",
+    padding: "10px",
     [theme.breakpoints.down("sm")]: {
       height: "30px"
     }

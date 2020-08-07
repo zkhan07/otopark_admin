@@ -16,7 +16,7 @@ export const useStyles = makeStyles(theme => ({
   },
   title: {
     color: "#1D1D1D",
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: "bold"
   },
   subTitle: {

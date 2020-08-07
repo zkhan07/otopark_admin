@@ -18,6 +18,7 @@ import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
+import Calender from "../../../util/Calender/Calender";
 import { useStyles } from "./css";
 
 export default function PrimarySearchAppBar() {
@@ -42,7 +43,8 @@ export default function PrimarySearchAppBar() {
         style={{ display: "flex", backgroundColor: "white" }}
       >
         <Toolbar className={classes.scroll}>
-          <div
+          <Calender />
+          {/* <div
             style={{
               backgroundColor: "#00BBDC",
               borderRadius: "50px",
@@ -63,10 +65,14 @@ export default function PrimarySearchAppBar() {
               <option>january 5,2020 - oct 5,2023</option>
               <option>january 6,2020 - oct 5,2023</option>
             </select>
-          </div>
+          </div> */}
 
           <div>
-            <Button className={classes.button} variant="outlined">
+            <Button
+              className={classes.button}
+              variant="contained"
+              style={{ backgroundColor: "#00BBDC", color: "white" }}
+            >
               All Users
             </Button>
             <Button className={classes.button} variant="outlined">

@@ -39,14 +39,18 @@ export default function BarChart() {
 
   const bar = {
     labels: [
-      "January",
-      "February",
-      "March",
-      "April",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
       "May",
-      "June",
-      "july",
-      "August"
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
     ],
     datasets: [
       {
@@ -56,7 +60,7 @@ export default function BarChart() {
         barThickness: 30,
         hoverBackgroundColor: "white",
         hoverBorderColor: "white",
-        data: [100, 70, 65, 59, 80, 81, 56, 55, 40]
+        data: [90, 60, 80, 50, 100, 70, 65, 59, 80, 81, 56, 55, 40]
       }
     ]
   };
@@ -66,8 +70,8 @@ export default function BarChart() {
     // Chart.defaults.global.elements.rectangle.borderWidth = 2;
 
     tooltips: {
-      enabled: true,
-      custom: CustomTooltips
+      enabled: true
+      // custom: CustomTooltips
     },
     maintainAspectRatio: true,
     legend: {
@@ -107,8 +111,8 @@ export default function BarChart() {
       <div className={classes.root}>
         <Toolbar>
           <MuiThemeProvider theme={theme}>
-            <Typography align="left" variant="h6" style={{ flex: 1 }}>
-              OverView
+            <Typography align="left" variant="h7" style={{ flex: 1 }}>
+              OVERVIEW
             </Typography>
           </MuiThemeProvider>
           <div>

@@ -78,7 +78,7 @@ const headCells = [
     id: "uniqueControlledId",
     numeric: true,
     disablePadding: false,
-    label: "Unique Controlled ID",
+    label: "Controller ID",
     minWidth: 150
   },
   {
@@ -92,7 +92,7 @@ const headCells = [
     id: "uniqueTransactionId",
     numeric: true,
     disablePadding: false,
-    label: "Unique Transaction ID",
+    label: "Transaction ID",
     minWidth: 170
   },
   {
@@ -222,7 +222,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -266,7 +266,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -310,7 +310,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -354,7 +354,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -398,7 +398,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -442,7 +442,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -486,7 +486,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button

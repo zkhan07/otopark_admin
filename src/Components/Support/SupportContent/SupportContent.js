@@ -30,7 +30,7 @@ export default function FullWidthGrid() {
           style={{ padding: "10px", color: "#1D1D1D" }}
         >
           <br />
-          <b>Support Data</b>
+          <b>Support Overview</b>
         </Typography>
         <br />
         <br />
@@ -58,6 +58,26 @@ export default function FullWidthGrid() {
                     <b>87</b>
                   </Typography>
                 </MuiThemeProvider>
+              </Grid>
+              <Grid item xs={6} sm={2}>
+                <Typography
+                  align="center"
+                  variant="body2"
+                  component="p"
+                  className={classes.title}
+                >
+                  Unopened Support
+                </Typography>
+                <Typography
+                  align="center"
+                  variant="h2"
+                  component="h2"
+                  className={classes.subtTitle}
+                  className={classes.verticalBar}
+                  // style={{ marginTop: "10px" }}
+                >
+                  <b>20</b>
+                </Typography>
               </Grid>
               <Grid item xs={6} sm={2}>
                 <Typography

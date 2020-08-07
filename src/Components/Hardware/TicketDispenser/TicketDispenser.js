@@ -191,7 +191,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -245,7 +245,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -299,7 +299,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -353,7 +353,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -407,7 +407,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -461,7 +461,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -515,7 +515,7 @@ const rows = [
           fontSize: "12px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button

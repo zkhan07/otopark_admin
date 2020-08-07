@@ -19,7 +19,7 @@ export default function FullWidthGrid() {
           style={{ padding: "10px", color: "#1D1D1D" }}
         >
           <br />
-          <b>Notification Data</b>
+          <b>Notification Overview</b>
           <br />
         </Typography>
         <br />

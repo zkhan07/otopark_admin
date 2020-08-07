@@ -1,12 +1,13 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 // import Typography from "@material-ui/core/Typography";
 // import DoughnutChart from "../userDoughnutChart/UserDoughnutChart";
 // import Card from "../UserCard/UserCard";
 import ParkingTable from "../ParkingTable/ParkingTable";
-
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 import EnhancedTable from "../SortedTable.js/TableSort";
 import ParkingAppBar from "../ParkingAppbar/ParkingAppbar";
 import ParkingDoughnutChart from "../ParkingDoughnutChart/ParkingDoughnutChart";
@@ -22,6 +23,15 @@ export default function FullWidthGrid() {
   const classes = useStyles();
   let theme = createMuiTheme();
   theme = responsiveFontSizes(theme);
+  const HtmlTooltip = withStyles(theme => ({
+    tooltip: {
+      backgroundColor: "#f5f5f9",
+      color: "rgba(0, 0, 0, 0.87)",
+      maxWidth: 220,
+      fontSize: theme.typography.pxToRem(12),
+      border: "1px solid #dadde9"
+    }
+  }))(Tooltip);
 
   return (
     <div>
@@ -32,7 +42,7 @@ export default function FullWidthGrid() {
           style={{ padding: "10px", color: "#1D1D1D" }}
         >
           <br />
-          <b>Parking Data</b>
+          <b>Parking Overview</b>
           <br />
         </Typography>
         <br />
@@ -41,17 +51,30 @@ export default function FullWidthGrid() {
           <Grid item sm={4}>
             <ParkingDoughnutChart />
           </Grid>
-          <Grid item xs={12} sm={6} tyle={{ marginTop: "90px" }}>
+          <Grid item xs={12} sm={8} style={{ marginTop: "90px" }}>
             <Grid container spacing={1}>
-              <Grid item xs={6} sm={4}>
-                <Typography
-                  align="center"
-                  variant="body2"
-                  component="p"
-                  className={classes.title}
-                >
-                  Total Parking
+              <Grid item xs={6} sm={3}>
+                <Typography align="center" className={classes.title}>
+                  Completed Parking
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography variant="h7" color="inherit">
+                          Total completed parking by visitors and otopark
+                          registered Guests
+                        </Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <IconButton aria-label="discription">
+                      <img
+                        src={require("../../../assets/icons/question-markIcon.svg")}
+                      />
+                    </IconButton>
+                  </HtmlTooltip>
                 </Typography>
+
+                {/*  */}
                 <MuiThemeProvider theme={theme}>
                   <Typography
                     align="center"
@@ -60,18 +83,29 @@ export default function FullWidthGrid() {
                     className={classes.subtTitle}
                     className={classes.verticalBar}
                   >
-                    <b>130</b>
+                    <b>87</b>
                   </Typography>
                 </MuiThemeProvider>
               </Grid>
-              <Grid item xs={6} sm={4}>
-                <Typography
-                  align="center"
-                  variant="body2"
-                  component="p"
-                  className={classes.title}
-                >
-                  Active Parking
+              <Grid item xs={6} sm={3}>
+                <Typography align="center" className={classes.title}>
+                  Total Parking
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography variant="h7" color="inherit">
+                          Total number of parking spots in facility (Active
+                          Parking + Available Parking)
+                        </Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <IconButton aria-label="discription">
+                      <img
+                        src={require("../../../assets/icons/question-markIcon.svg")}
+                      />
+                    </IconButton>
+                  </HtmlTooltip>
                 </Typography>
                 <Typography
                   align="center"
@@ -81,17 +115,29 @@ export default function FullWidthGrid() {
                   className={classes.verticalBar}
                   style={{ color: "#00BBDC" }}
                 >
-                  <b>110</b>
+                  <b>117</b>
                 </Typography>
               </Grid>
-              <Grid item xs={6} sm={4}>
-                <Typography
-                  align="center"
-                  variant="body2"
-                  component="p"
-                  className={classes.title}
-                >
-                  Inactive Parking
+
+              <Grid item xs={6} sm={3}>
+                <Typography align="center" className={classes.title}>
+                  Active Parking
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography variant="h7" color="inherit">
+                          Total number of vehicles parked which have not exited
+                          the facility yet
+                        </Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <IconButton aria-label="discription">
+                      <img
+                        src={require("../../../assets/icons/question-markIcon.svg")}
+                      />
+                    </IconButton>
+                  </HtmlTooltip>
                 </Typography>
                 <Typography
                   align="center"
@@ -100,14 +146,40 @@ export default function FullWidthGrid() {
                   className={classes.subtTitle}
                   className={classes.verticalBar}
                 >
-                  <b>20</b>
+                  <b>450</b>
+                </Typography>
+              </Grid>
+              <Grid item xs={6} sm={3}>
+                <Typography align="center" className={classes.title}>
+                  Available Parking
+                  <HtmlTooltip
+                    title={
+                      <React.Fragment>
+                        <Typography variant="h7" color="inherit">
+                          Total number of open parking spaces available
+                        </Typography>
+                      </React.Fragment>
+                    }
+                  >
+                    <IconButton aria-label="discription">
+                      <img
+                        src={require("../../../assets/icons/question-markIcon.svg")}
+                      />
+                    </IconButton>
+                  </HtmlTooltip>
+                </Typography>
+                <Typography
+                  align="center"
+                  variant="h2"
+                  component="h2"
+                  className={classes.subtTitle}
+                  className={classes.verticalBar}
+                >
+                  <b>107</b>
                 </Typography>
               </Grid>
             </Grid>
-            <br />
-            <br />
           </Grid>
-
           {/* card end */}
           <Grid item xs={12}></Grid>
           <Grid item xs={12}>

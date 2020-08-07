@@ -57,8 +57,8 @@ export default function BarChart() {
     cornerRadius: 20,
     responsive: true,
     tooltips: {
-      enabled: true,
-      custom: CustomTooltips
+      enabled: true
+      // custom: CustomTooltips
     },
     maintainAspectRatio: true,
     legend: {

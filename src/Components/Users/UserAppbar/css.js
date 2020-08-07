@@ -66,7 +66,6 @@ export const useStyles = makeStyles(theme => ({
       width: "100px"
     }
   },
-
   button: {
     textTransform: "none",
     marginLeft: "-20px !important",
