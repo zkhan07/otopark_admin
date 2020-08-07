@@ -100,16 +100,16 @@ export default function FullWidthGrid() {
             />
             <br />
             <br />
-            <a href="#" style={{ textDecoration: "none" }}>
+            <Link to="#" style={{ textDecoration: "none" }}>
               <Button className={classes.button} variant="outlined">
                 <b>Get In</b>
               </Button>
-            </a>
-            <a href="#" style={{ textDecoration: "none" }}>
+            </Link>
+            <Link to="#" style={{ textDecoration: "none" }}>
               <Button className={classes.button} variant="outlined">
                 <b>Get Out</b>
               </Button>
-            </a>
+            </Link>
           </Grid>
           <Grid item xs={12}>
             <br />
