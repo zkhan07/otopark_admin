@@ -16,9 +16,6 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     padding: "10px"
   },
-  input: {
-    color: "red"
-  },
   imageIcon: {
     width: "25px",
     height: "25px"

@@ -46,8 +46,8 @@ export default function BarChart() {
         backgroundColor: "#00BBDC",
         borderColor: "#00BBDC",
         barThickness: 30,
-        hoverBackgroundColor: "white",
-        hoverBorderColor: "white",
+        hoverBackgroundColor: "#26272A",
+        hoverBorderColor: "#26272A",
         data: [100, 70, 65, 59, 80, 81, 56, 55, 40]
       }
     ]

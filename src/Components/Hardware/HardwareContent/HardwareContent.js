@@ -98,18 +98,6 @@ export default function FullWidthGrid() {
               className={classes.image}
               src={require("../../../assets/images/hardwarePageImg.svg")}
             />
-            <br />
-            <br />
-            <Link to="#" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="outlined">
-                <b>Get In</b>
-              </Button>
-            </Link>
-            <Link to="#" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="outlined">
-                <b>Get Out</b>
-              </Button>
-            </Link>
           </Grid>
           <Grid item xs={12}>
             <br />

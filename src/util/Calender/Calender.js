@@ -28,7 +28,7 @@ export default function MaterialUIPickers() {
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <Grid container justify="space-between">
         <KeyboardDatePicker
-          InputProps={{ className: classes.calender }}
+          InputProps={{ className: classes.calender, disableUnderline: true }}
           disableToolbar
           variant="inline"
           format="dd/MM/yyyy"

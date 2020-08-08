@@ -80,7 +80,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -112,7 +112,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -144,7 +144,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -176,7 +176,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -208,7 +208,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
@@ -240,7 +240,7 @@ const rows = [
           fontSize: "10px"
         }}
       >
-        View Deatils
+        View Details
       </Link>
       <br />
       <button
