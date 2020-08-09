@@ -99,7 +99,7 @@ export default function FullWidthGrid(props) {
             </Paper>
           </Grid>
 
-          <Grid item lg={12} sm={6}>
+          <Grid item lg={12} sm={12}>
             <Paper className={classes.paper}>
               <BarChart />
             </Paper>

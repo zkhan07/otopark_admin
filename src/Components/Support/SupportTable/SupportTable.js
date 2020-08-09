@@ -323,7 +323,7 @@ function EnhancedTableHead(props) {
             style={{
               backgroundColor: "#00BBDC",
               color: "white",
-              fontSize: "12px",
+              fontSize: "14px",
               textAlign: "center"
             }}
           >

@@ -38,20 +38,7 @@ export default function BarChart() {
   };
 
   const bar = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
     datasets: [
       {
         label: "Bookings",
@@ -60,7 +47,7 @@ export default function BarChart() {
         barThickness: 30,
         hoverBackgroundColor: "white",
         hoverBorderColor: "white",
-        data: [90, 60, 80, 50, 100, 70, 65, 59, 80, 81, 56, 55, 40]
+        data: [100, 65, 59, 80, 81, 56, 55, 40]
       }
     ]
   };
@@ -137,6 +124,7 @@ export default function BarChart() {
           </Typography>
         </MuiThemeProvider>
       </div>
+      <br />
       <Bar data={bar} options={options} height={100} />
     </div>
   );

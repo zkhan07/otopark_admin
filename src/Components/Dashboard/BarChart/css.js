@@ -24,7 +24,7 @@ export const useStyles = makeStyles(theme => ({
     padding: "10px",
     [theme.breakpoints.down("sm")]: {
       // width: "40",
-      height: "30px"
+      height: "35px"
     }
   }
 }));

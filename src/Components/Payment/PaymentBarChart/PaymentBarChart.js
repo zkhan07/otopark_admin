@@ -119,6 +119,7 @@ export default function BarChart() {
           <b>Total Revenue</b>
         </Typography>
       </div>
+      <br />
       <Bar data={bar} options={options} height={100} />
     </div>
   );

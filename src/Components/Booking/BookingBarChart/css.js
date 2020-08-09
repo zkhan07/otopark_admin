@@ -23,10 +23,11 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     padding: "10px",
     [theme.breakpoints.down("sm")]: {
-      height: "30px"
+      height: "35px"
     }
   },
   title: {
+    marginTop: "-20px",
     marginLeft: "20px",
     fontSize: "20px",
     [theme.breakpoints.down("sm")]: {

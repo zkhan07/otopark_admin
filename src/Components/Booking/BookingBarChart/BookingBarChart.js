@@ -12,7 +12,6 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-// import "chartjs-top-round-bar";
 import { useStyles } from "./css";
 
 export default function BarChart() {
@@ -118,9 +117,10 @@ export default function BarChart() {
           </div>
         </Toolbar>
         <Typography align="left" variant="h5" className={classes.title}>
-          Awaiting Confirmation
+          Total Bookings
         </Typography>
       </div>
+      <br />
       <Bar data={bar} options={options} height={100} topBorderRadius={150} />
     </div>
   );

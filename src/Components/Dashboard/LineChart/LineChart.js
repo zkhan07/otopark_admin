@@ -173,7 +173,7 @@ export default function LineChart(props) {
           </Typography>
         </MuiThemeProvider>
       </div>
-
+      <br />
       <Line data={line} options={options} />
     </div>
   );

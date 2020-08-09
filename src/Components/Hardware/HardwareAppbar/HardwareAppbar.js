@@ -57,7 +57,7 @@ export default function PrimarySearchAppBar() {
               Parking in Progress
             </Button>
             <Button className={classes.button} variant="outlined">
-              Payout Completed
+              Parking Completed
             </Button>
           </div>
           {/* Search Bar */}

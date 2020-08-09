@@ -86,7 +86,7 @@ export default function FullWidthGrid() {
                   component="p"
                   className={classes.title}
                 >
-                  closed Support
+                  Closed Support
                 </Typography>
                 <Typography
                   align="center"

@@ -530,7 +530,7 @@ function EnhancedTableHead(props) {
               minWidth: headCell.minWidth,
               backgroundColor: "#00BBDC",
               color: "white",
-              fontSize: "12px",
+              fontSize: "14px",
               textAlign: "center"
             }}
           >
