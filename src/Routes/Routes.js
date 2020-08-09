@@ -32,7 +32,7 @@ export const Routes = () => {
         <Switch>
           <Route exact path="/otopark/login" component={LoginPage} />
 
-          <Route exact path="/otopark/dashboard" component={Dashboard} />
+          <Route exact path="/" component={Dashboard} />
           <Route exact path="/otopark/users" component={UserDash} />
           <Route exact path="/otopark/parking" component={Parking} />
           <Route exact path="/otopark/booking" component={Booking} />
